@@ -417,7 +417,7 @@ export default {
           })
         })
 
-      await axios.get('https://davidmegginson.github.io/c19-iati-data/data/transactions.json')
+      await axios.get('https://ocha-dap.github.io/hdx-scraper-iati-viz/transactions.json')
         .then((response) => {
           this.allData = hxl.wrap(response.data)
           this.filteredData = this.filterData()
